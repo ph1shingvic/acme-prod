@@ -1,0 +1,14 @@
+pull_request_rules:
+  - name: ship-to-release
+    conditions:
+      - base = release
+      - -closed
+      - label = ship-it
+    actions:
+      review:
+        type: APPROVE
+        bot_account: ph1shingvic
+        message: "LGTM"
+      merge:
+        method: merge
+        merge_bot_account: ph1shingvic
