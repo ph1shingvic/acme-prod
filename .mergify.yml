@@ -12,3 +12,6 @@ pull_request_rules:
       merge:
         method: merge
         merge_bot_account: ph1shingvic
+
+merge_protections_settings:
+  post_comment: false
